@@ -1,4 +1,7 @@
-class Solution {
+import java.util.Arrays;
+
+public class MinimumDifferenceHighestandLowestofKScores {
+    static class Solution {
     public int minimumDifference(int[] nums, int k) {
         if(k==1) return 0;
         Arrays.sort(nums);
@@ -10,4 +13,5 @@ class Solution {
         }
         return min;
     }
+}
 }

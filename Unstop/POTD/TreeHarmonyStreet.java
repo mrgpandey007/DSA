@@ -1,6 +1,6 @@
 import java.util.*;
 
-public class Main {
+public class TreeHarmonyStreet {
     static int maxAdditionalTrees(int[] P, int N) {
         int additionalTrees = 0;
         for (int i = 0; i < N; i++) {
@@ -19,12 +19,16 @@ public class Main {
 
     public static void main(String[] args) {
         Scanner scanner = new Scanner(System.in);
-        int N = scanner.nextInt();
-        int[] P = new int[N];
-        for (int i = 0; i < N; i++) {
-            P[i] = scanner.nextInt();
+        try {
+            int N = scanner.nextInt();
+            int[] P = new int[N];
+            for (int i = 0; i < N; i++) {
+                P[i] = scanner.nextInt();
+            }
+            int result = maxAdditionalTrees(P, N);
+            System.out.println(result);
+        } finally {
+            scanner.close();
         }
-        int result = maxAdditionalTrees(P, N);
-        System.out.println(result);
     }
 }

@@ -1,4 +1,5 @@
-class Solution {
+public class MinimumPairRemovaltoSortArrayI {
+    static class Solution {
     public boolean issorted(int[] nums , int n) {
         for(int i=0;i<n-1;i++) {
             if(nums[i]>nums[i+1]) return false;
@@ -24,4 +25,5 @@ class Solution {
         }
         return ans;
     }
+}
 }

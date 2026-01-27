@@ -1,5 +1,6 @@
 import java.util.Scanner;
-public class Main {
+
+public class WaterSlideCongestionManagement {
     public static int maxTotalPopularity(int[] P, int N) {
         if (N == 0) return 0;
         int prev2 = 0;                  

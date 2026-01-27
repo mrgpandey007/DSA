@@ -1,6 +1,6 @@
 import java.util.Scanner;
 import java.util.HashSet;
-public class Main {
+public class LongestSubstringwithDistinctCharacterswithaGivenDifference {
     public static int findLongestDistinctSubstring(int N, int D, String s) {
         int max=-1;
         for(int i=0;i<N;i++) {
@@ -19,10 +19,14 @@ public class Main {
 
     public static void main(String[] args) {
         Scanner scanner = new Scanner(System.in);
-        int N = scanner.nextInt();
-        int D = scanner.nextInt();
-        String S = scanner.next();
-        int result = findLongestDistinctSubstring(N, D, S);
-        System.out.println(result);
+        try {
+            int N = scanner.nextInt();
+            int D = scanner.nextInt();
+            String S = scanner.next();
+            int result = findLongestDistinctSubstring(N, D, S);
+            System.out.println(result);
+        } finally {
+            scanner.close();
+        }
     }
 }

@@ -1,4 +1,8 @@
-class Solution {
+import java.util.ArrayList;
+import java.util.List;
+
+public class FindAllNumbersDisappearedinanArray {
+    static class Solution {
     public List<Integer> findDisappearedNumbers(int[] nums) {
         boolean temp[] = new boolean[nums.length+1];
         for(int num:nums) {
@@ -12,4 +16,5 @@ class Solution {
         }
         return ans;
     }
+}
 }

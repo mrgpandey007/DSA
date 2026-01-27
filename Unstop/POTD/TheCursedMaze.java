@@ -1,5 +1,6 @@
 import java.util.Scanner;
-public class Main {
+
+public class TheCursedMaze {
     public static int userLogic(int[][] maze) {
         int value = 0;
         for(int[] row : maze) {

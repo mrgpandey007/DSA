@@ -1,4 +1,5 @@
-class Solution {
+public class MinimimTimeVisitingAllPoints {
+    static class Solution {
     public static int abs(int x) {
         return x>0?x:-x;
     }
@@ -9,4 +10,5 @@ class Solution {
         }
         return res;
     }
+}
 }

@@ -1,4 +1,5 @@
-class Solution {
+public class NumberOfWaysToPaintNX3Grid {
+    static class Solution {
     public int numOfWays(int n) {
         long a=6,b=6;
         for(int i=2;i<=n;i++) {
@@ -8,4 +9,5 @@ class Solution {
         }
         return (int)(a+b)%1000000007;
     }
+}
 }

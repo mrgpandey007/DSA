@@ -1,4 +1,5 @@
-class Solution {
+public class ShuffletheArray {
+    static class Solution {
     public int[] shuffle(int[] nums, int n) {
         int temp[] = new int[2*n];
         int i=0,j=n;
@@ -8,4 +9,5 @@ class Solution {
         }
         return temp;
     }
+}
 }

@@ -1,4 +1,7 @@
-class Solution {
+import java.util.Arrays;
+
+public class MinimizeMaximumPairSuminArray {
+    static class Solution {
     public int minPairSum(int[] nums) {
         Arrays.sort(nums);
         int n=nums.length/2,max=0;
@@ -9,4 +12,5 @@ class Solution {
         }
         return max;
     }
+}
 }

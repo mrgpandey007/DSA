@@ -1,4 +1,5 @@
-class Solution {
+public class MaximumProductSubarray {
+    static class Solution {
     public int maxProduct(int[] nums) {
         int max=Integer.MIN_VALUE,prod=1;
         for(int num:nums) {
@@ -18,4 +19,5 @@ class Solution {
         }  
         return max;
     }
+}
 }

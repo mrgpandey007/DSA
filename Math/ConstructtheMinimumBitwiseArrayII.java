@@ -1,6 +1,9 @@
-class Solution {
+import java.util.List;
+
+public class ConstructtheMinimumBitwiseArrayII {
+    static class Solution {
     public int[] minBitwiseArray(List<Integer> nums) {
-        int[] ans = new int[nums.size];
+        int[] ans = new int[nums.size()];
         int i=0;
         for(int num:nums) {
             if(num % 2 ==0 ) {
@@ -11,4 +14,5 @@ class Solution {
         }
         return ans;
     }
+}
 }

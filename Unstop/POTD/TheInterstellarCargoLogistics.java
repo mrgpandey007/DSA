@@ -1,8 +1,5 @@
-import java.io.*;
-import java.util.*;
-import java.text.*;
-import java.math.*;
-import java.util.regex.*;
+import java.util.Scanner;
+import java.util.Arrays;
 
 class Main {
     public static int minfuel(int n,int[] w,int k) {
@@ -37,12 +34,16 @@ class Main {
 
     public static void main(String[] args) {
         Scanner input = new Scanner(System.in);
-        int n = input.nextInt();
-        int[] weight = new int[n];
-        for(int i=0; i < n ; i++) {
-            weight[i]=input.nextInt();
+        try {
+            int n = input.nextInt();
+            int[] weight = new int[n];
+            for(int i=0; i < n ; i++) {
+                weight[i]=input.nextInt();
+            }
+            int slip = input.nextInt();
+            System.out.println(minfuel(n,weight,slip));
+        } finally {
+            input.close();
         }
-        int slip = input.nextInt();
-        System.out.println(minfuel(n,weight,slip));
     }
 }

@@ -1,4 +1,5 @@
-class Solution {
+public class SetMismatch {
+    static class Solution {
     public int[] findErrorNums(int[] nums) {
         int n = nums.length, sum = n*(n+1)/2;
         long sq_sum = (long) n*(n+1)*(2*n+1)/6;
@@ -13,4 +14,5 @@ class Solution {
         ans[1] = (int) sum+ans[0];
         return ans;
     }
+}
 }

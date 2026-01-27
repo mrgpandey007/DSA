@@ -1,6 +1,7 @@
 import java.io.*;
 import java.util.*;
-public class Main {
+
+public class MaximumScoreOfBridged {
     static class Pair {
         long dp0, dp1;
         Pair(long a, long b) {

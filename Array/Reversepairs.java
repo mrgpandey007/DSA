@@ -1,4 +1,5 @@
-class Solution {
+public class Reversepairs {
+    static class Solution {
     public static void merge(int arr[], int start, int mid, int end) {
         int temp[] = new int[end - start + 1];
         int k = 0, i = start, j = mid + 1;
@@ -37,4 +38,5 @@ class Solution {
     public int reversePairs(int[] nums) {
         return mergesort(nums, 0, nums.length - 1);
     }
+}
 }

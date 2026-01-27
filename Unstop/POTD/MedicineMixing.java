@@ -1,6 +1,6 @@
 import java.util.Scanner;
 
-public class Main {
+public class MedicineMixing {
 
     public static long minEnergyCost(int[] T, int K) {
         int N = T.length;
@@ -20,15 +20,19 @@ public class Main {
 
     public static void main(String[] args) {
         Scanner scanner = new Scanner(System.in);
-        int N = scanner.nextInt();
-        int K = scanner.nextInt();
+        try {
+            int N = scanner.nextInt();
+            int K = scanner.nextInt();
 
-        int[] T = new int[N];
-        for (int i = 0; i < N; i++) {
-            T[i] = scanner.nextInt();
+            int[] T = new int[N];
+            for (int i = 0; i < N; i++) {
+                T[i] = scanner.nextInt();
+            }
+
+            long result = minEnergyCost(T, K);
+            System.out.println(result);
+        } finally {
+            scanner.close();
         }
-
-        long result = minEnergyCost(T, K);
-        System.out.println(result);
     }
 }
